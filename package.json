@@ -13,6 +13,7 @@
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "three": "^0.175.0"
+    "three": "^0.175.0",
+    "three-stdlib": "^2.35.15"
   }
 }

@@ -15,11 +15,25 @@ html *{
 	color: var(--primary-color);
 }
 
+.bg-canvas {
+	left: 0;
+	top: 0;
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+}
+
+main * {
+	background: none;
+}
+
 .content {
-	margin-top: 100px;
-	margin-bottom: 100px;
-	margin-left: var(--margin);
-	margin-right: var(--margin);
+	z-index: 100;
+	position: relative;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	padding-left: var(--margin);
+	padding-right: var(--margin);
 }
 
 header {

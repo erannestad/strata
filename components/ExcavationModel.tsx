@@ -1,13 +1,28 @@
-import React from 'react';
-import { Center } from '@react-three/drei';
+import React, { useEffect } from 'react';
 import { useGLTF } from '@react-three/drei';
-import { Group } from 'three';
-
-// SIMPLIFYING 3D MODELS
-// https://vraulet.medium.com/simplifying-glb-files-for-use-in-unity-bd34f7748fae
+import { Center } from '@react-three/drei';
+import * as THREE from 'three';
 
 export default function ExcavationModel() {
-  const { scene } = useGLTF('/models/scene_min3.gltf') as { scene: Group };
+  const { scene } = useGLTF('/models/model.glb');
+
+  useEffect(() => {
+    scene.traverse((child) => {
+      if (
+        child instanceof THREE.Mesh &&
+        child.material &&
+        'map' in child.material &&
+        child.material.map
+      ) {
+        child.material.map.anisotropy = 16;
+        child.material.map.minFilter = THREE.LinearMipMapLinearFilter;
+        child.material.map.magFilter = THREE.LinearFilter;
+        child.material.map.generateMipmaps = true;
+        child.material.map.needsUpdate = true;
+      }
+    });
+  }, [scene]);
+  
 
   return (
     <Center>
