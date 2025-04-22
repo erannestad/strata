@@ -18,6 +18,27 @@ export default function Body() {
           <p>In the evening, the structure transforms into a hybrid space of conversation and film screenings. Co-curated with the Harvard University Native American Program, these films present current indigenous stories.</p>
           </div>
         </section>
+
+        <section id="events" className='full-height justify-bottom small-padding'>
+          <div className='spacer'></div>
+          <div>
+          <p>We Still Live Here</p>
+
+          <p>Dawnland</p>
+
+          <p>Yintah</p>
+          </div>
+        </section>
+
+        <section id="info" className='full-height justify-bottom small-padding'>
+          <div className='spacer'></div>
+          <div>
+          <p>Ignacio Lira Montes</p>
+          <p>Eric Rannestad</p>
+          <p>Victoria Suarez Ramos</p>
+          </div>
+        </section>
+
     </div>
     );
 }
