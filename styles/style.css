@@ -7,6 +7,7 @@
     --border-width: 1px;
     --primary-font: "Cardo", serif;
 	--font-size: 26px;
+	--font-size-mobile: 18px;
 	--canvas-overhang: 100px;
 }
 
@@ -19,6 +20,10 @@ html {
 
 html * {
 	box-sizing: border-box;
+}
+
+.background-color-black {
+	background-color: black;
 }
 
 .bg-canvas {
@@ -233,6 +238,13 @@ h1 {
 /*  BREAKPOITNS  */
 
 @media (max-width: 800px) {
+
+	body {
+		font-family: "Cardo";
+		color: var(--primary-color);
+		font-size: var(--font-size-mobile);
+		margin: 0;
+	}	
 
 	.hide-on-mobile {
 		display: none !important;
