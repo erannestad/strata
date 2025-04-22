@@ -6,7 +6,7 @@
     --border-color: rgb(255, 255, 255);
     --border-width: 1px;
     --primary-font: "Cardo", serif;
-	--font-size: 24px;
+	--font-size: 26px;
 	--canvas-overhang: 100px;
 }
 
@@ -139,8 +139,8 @@ section.top-margin-large {
 	padding: var(--margin);
 }
 
-.spacer {
-	min-height: calc(66.666vh - var(--margin));
+.spacer_2-3 {
+	min-height: calc(66.666vh - var(--margin) * 2);
 }
 
 .col {
