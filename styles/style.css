@@ -1,7 +1,7 @@
 /* Define CSS Variables */
 :root {
     --primary-color: rgb(255, 255, 255);
-    --secondary-color: rgb(244, 100, 23);
+    --secondary-color: #e4570c;
     --margin: 18px;
     --border-color: rgb(255, 255, 255);
     --border-width: 1px;
@@ -9,7 +9,7 @@
 	--font-size: 24px
 }
 
-html *{
+html {
 	box-sizing: border-box;
 	background-color: var(--secondary-color);
 	color: var(--primary-color);
@@ -38,12 +38,12 @@ main * {
 
 header {
 	position: absolute;
-    z-index: 100;
+    z-index: 200;
 	width: 100%;
 	left: 0;
 	top: 0;
 	border-bottom: solid var(--border-color) var(--border-width);
-/*	background-color: grey;*/
+	background: none;
 /*	padding: 12px;*/
 }
 

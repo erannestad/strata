@@ -2,8 +2,14 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls, Sphere, Line, Bounds } from '@react-three/drei';
 import ExcavationModel from './ExcavationModel';
 import { useRef, useEffect } from 'react';
+import { Grid } from '@react-three/drei';
+import * as THREE from 'three';
+
+
 
 export default function Home({ showControls = true }) {
+
+
   const showLights = false;
 
   const lights = [
@@ -45,6 +51,35 @@ export default function Home({ showControls = true }) {
     <div className="bg-canvas">
       <Canvas camera={{ position: initialCameraPos, fov: 40, near: 0.1, far: 1000 }}>
         <ambientLight intensity={0.75} />
+
+          {/* <color attach="background" args={[ '#e4570c' ]} /> */}
+          <mesh>
+            <sphereGeometry args={[2000, 32, 32]} />
+            <meshStandardMaterial
+              color="#e4570c"
+              side={THREE.BackSide}
+              metalness={0.2}
+              roughness={10}
+              transparent={true}
+              opacity={0.45} // ← adjust this
+            />
+          </mesh>
+
+
+          {/* Subtle background grid */}
+          <Grid
+            position={[0, -3000, 0]}
+            args={[2000, 2000]}
+            cellSize={700}
+            cellThickness={0.1}
+            sectionSize={700}
+            sectionThickness={.7}
+            sectionColor={'black'}
+            // cellColor={'#white'}
+            fadeDistance={20000}
+            fadeStrength={2}
+            infiniteGrid
+          />
 
         {lights.map((light, i) => (
           <group key={i}>
