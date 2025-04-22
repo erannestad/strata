@@ -1,0 +1,11 @@
+Model Information:
+* title:	East Trench - Week 6
+* source:	https://sketchfab.com/3d-models/east-trench-week-6-78c36a851053445bbdbf5d8213142371
+* author:	Harvard FAS-ATG (https://sketchfab.com/harvard-atg)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "East Trench - Week 6" (https://sketchfab.com/3d-models/east-trench-week-6-78c36a851053445bbdbf5d8213142371) by Harvard FAS-ATG (https://sketchfab.com/harvard-atg) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
