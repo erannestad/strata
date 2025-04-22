@@ -3,7 +3,18 @@ import Canvas from '../components/Canvas'
 export default function Body() {
   return (
     <div className="content">
-        <p>STRATA (There Are Always Tracks to Follow) is an abstract representation of an excavation site based on previous archaeological digs near the site of the Harvard Indian College. It is a theoretical container of extracted earth, presented above the ground as a public activation that materializes the site’s history, its analysis, and mythologies. This fabric structure doubles as a screening location for indigenous-directed and featured films during the evening of the festival. Together, it is a counterpoint to the implicit mythologies of Harvard’s origin, an installation concerned with our present moment, and with layers of sediment yet to be deposited.</p>
+       <section className='small-padding full-height justify-bottom'>
+          <div className='spacer'></div>
+          <p>STRATA (There Are Always Tracks to Follow) is an abstract representation of an excavation site based on previous archaeological digs near the site of the Harvard Indian College. It is a theoretical container of extracted earth, presented above the ground as an activation of public space and counterpoint to the mythologies of Harvard's origin. In the evening, this fabric structure doubles as a screening location for indigenous-directed and featured films. Taken together, it an installation concerned with our present moment, and with layers of sediment yet to be deposited.</p>
+        </section>
+        
+        <section className='full-width'>
+          <p>The Harvard Indian College, a two-story brick building, stood from 1633 until its dismantling in 1698. The Old College served as a multipurpose structure that included residences, as well as academic, dining, and kitchen spaces. The Indian College housed students from New England, Native American tribes, English students, and the first printing press in the American colonies. The Charter of 1630 dedicated Harvard “to the education of English and Indian Youth of this country in knowledge and godliness.</p>
+
+          <p>Bricks of the Harvard Indian College, ceramics, old nails, and lead block type from the printing of the Eliot Bible, are examples of artifacts unearthed here. These objects, found in the depths of the excavation site, mark a history where the 17th century settler-colonial project interfaced with the region’s indigenous Massachusett, Wampanoag, and Nipmuck peoples through trade and exchange, but also violence, manipulation, and territorial dispossession.</p>
+          
+          <p>In the evening, the structure transforms into a hybrid space of conversation and film screenings. Co-curated with the Harvard University Native American Program, these films present current indigenous stories.</p>
+        </section>
     </div>
     );
 }

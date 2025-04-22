@@ -50,7 +50,13 @@ export default function Home({ showControls = true }) {
   return (
     <div className="bg-canvas">
       <Canvas camera={{ position: initialCameraPos, fov: 40, near: 0.1, far: 1000 }}>
-        <ambientLight intensity={0.75} />
+        <ambientLight intensity={.2} />
+
+        <directionalLight
+          position={[0, 2000, 0]}
+          intensity={1}
+          castShadow
+        />
 
           {/* <color attach="background" args={[ '#e4570c' ]} /> */}
           <mesh>
@@ -61,16 +67,16 @@ export default function Home({ showControls = true }) {
               metalness={0.2}
               roughness={10}
               transparent={true}
-              opacity={0.45} // ← adjust this
+              opacity={0.95} // ← adjust this
             />
           </mesh>
 
 
           {/* Subtle background grid */}
           <Grid
-            position={[0, -3000, 0]}
+            position={[0, -500, 0]}
             args={[2000, 2000]}
-            cellSize={700}
+            cellSize={300}
             cellThickness={0.1}
             sectionSize={700}
             sectionThickness={.7}
