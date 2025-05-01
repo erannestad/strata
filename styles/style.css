@@ -1,6 +1,7 @@
 /* Define CSS Variables */
 :root {
-    --primary-color: rgb(255, 255, 255);
+    --primary-color: #ffffff;
+    --link-color: #ffffff;
     --secondary-color: #e4570c;
     --margin: 18px;
     --border-color: rgb(255, 255, 255);
@@ -16,6 +17,14 @@ html {
 	background-color: black;
 	color: var(--primary-color);
 	overflow-x: hidden;
+}
+
+a {
+	color: var(--link-color);
+	
+		display: inline;
+		box-shadow: inset 0 -0.15em 0 0 currentColor; /* thinner and lower */
+	  
 }
 
 html * {
@@ -36,6 +45,10 @@ html * {
 
 main * {
 	background: none;
+}
+
+.offset-header{
+	padding-top:100px !important;
 }
 
 .content {
@@ -68,14 +81,17 @@ nav ul {
     padding: 0;
 }
 
+.col-2 {
+	display: flex;
+}
+
 nav li {
 	display: inline-block;
 }
 
 
 a {
-    color: var(--primary-color);
-    underline: none;
+    /* color: var(--primary-color); */
     text-decoration: none;
 }
 
@@ -178,6 +194,16 @@ figure.img-center {
 	align-items: center;
 	justify-content: center;
 }
+
+.event {
+	max-width: 400px;
+}
+
+.text-sm {
+	font-size: 14px;
+}
+
+
 figcaption {
 	margin-top: 12px;
 	font-size: 12px;
