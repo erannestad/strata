@@ -10,7 +10,7 @@
   "dependencies": {
     "@react-three/drei": "^10.0.6",
     "@react-three/fiber": "^9.1.2",
-    "next": "latest",
+    "next": "15.3.8",
     "react": "latest",
     "react-dom": "latest",
     "three": "^0.175.0",
