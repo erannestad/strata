@@ -6,33 +6,61 @@ export default function Body() {
        <section className='offset-header full-height background-color-black justify-bottom small-padding '>
           <div id="events">
             {/* <h2>Program</h2> */}
-            <div>
+            <div className="events-grid">
               <div className='event'>
-                <span className='text-sm'>Screening</span>
-                <p><a href='https://www.pbs.org/independentlens/documentaries/we-still-live-here/'>We Still Live Here</a></p>
-                <div className='text-sm'>
-                  <p>Friday, May 2  at  2pm</p>
+                <div className="event-media">
+                  <span className='event-label'>Screening</span>
+                  <div className="event-img-wrap">
+                    <img src="/event-imgs/screening-we-still-live-here.png" alt="We Still Live Here" />
+                  </div>
                 </div>
-                <p className='text-sm'>Directed by Anne Makepeace, the film tells the powerful story of the Wampanoag people and their efforts to reclaim their language and cultural identity. </p>
+                <div className="event-body">
+                  <p><a href='https://www.pbs.org/independentlens/documentaries/we-still-live-here/'>We Still Live Here</a></p>
+                  <div className='text-sm event-date'>
+                    <p>Friday, May 2  at  2pm</p>
+                  </div>
+                  <p className='text-sm'>Directed by Anne Makepeace, the film tells the powerful story of the Wampanoag people and their efforts to reclaim their language and cultural identity. </p>
+                </div>
               </div>
               <div className='event'>
-                <span className='text-sm'>Watch Online</span>
-                <p><a href='https://upstanderproject.org/films/dawnland'>Dawnland</a></p>
-                <p className='text-sm'>Dawnland is the untold story of Indigenous child removal in the US through the nation's first-ever government-endorsed truth and reconciliation commission, which investigated the devastating impact of Maine’s child welfare practices on the Wabanaki people.</p>
+                <div className="event-media">
+                  <span className='event-label'>Watch Online</span>
+                  <div className="event-img-wrap">
+                    <img src="/event-imgs/Dawnland+-+Learning+Resources.webp" alt="Dawnland" />
+                  </div>
+                </div>
+                <div className="event-body">
+                  <p><a href='https://upstanderproject.org/films/dawnland'>Dawnland</a></p>
+                  <p className='text-sm'>Dawnland is the untold story of Indigenous child removal in the US through the nation's first-ever government-endorsed truth and reconciliation commission, which investigated the devastating impact of Maine’s child welfare practices on the Wabanaki people.</p>
+              </div>
               </div>
               <div className='event'>
-                <span className='text-sm'>Event</span>
-                <p>Stickball in the Yard</p>
-                <div className='text-sm'>
-                  <p>Thursday, May 1  at  8pm</p>
-                </div>                <p className='text-sm'>Come watch a game of casual stickball in the Harvard Yard! Organized by James Walkingstick.</p>
+                <div className="event-media">
+                  <span className='event-label'>Event</span>
+                  <div className="event-img-wrap">
+                    <img src="/event-imgs/stickball.png" alt="Stickball in the Yard" />
+                  </div>
+                </div>
+                <div className="event-body">
+                  <p><a href='https://calendar.google.com/calendar/render?action=TEMPLATE&text=Stickball+in+the+Yard&dates=20250501T160000/20250501T170000&details=Come+watch+a+game+of+casual+stickball+in+the+Harvard+Yard!+Organized+by+James+Walkingstick.&location=Harvard+Yard'>Stickball in the Yard</a></p>
+                  <div className='text-sm event-date'>
+                    <p>Thursday, May 1  at  4pm</p>
+                  </div>                <p className='text-sm'>Come watch a game of casual stickball in the Harvard Yard! Organized by James Walkingstick.</p>
+                </div>
               </div>
               <div className='event'>
-                <span className='text-sm'>Watch Online</span>
-                <p>Yintah</p>
-                <div className='text-sm'>
-                  <p>Available on Netflix</p>
-                </div>                <p className='text-sm'>A focus on the impact on the lives of the Wet'suwet'en people who live on unceded territory, as they oppose the construction of multiple infrastructure projects</p>
+                <div className="event-media">
+                  <span className='event-label'>Watch Online</span>
+                  <div className="event-img-wrap">
+                    <img src="/event-imgs/yintah.jpg" alt="Yintah" />
+                  </div>
+                </div>
+                <div className="event-body">
+                  <p><a href='https://www.netflix.com/title/81925905'>Yintah</a></p>
+                  <div className='text-sm event-date'>
+                    <p><a href='https://www.netflix.com/title/81925905'>Available on Netflix</a></p>
+                  </div>                <p className='text-sm'>A focus on the impact on the lives of the Wet'suwet'en people who live on unceded territory, as they oppose the construction of multiple infrastructure projects</p>
+                </div>
               </div>
             </div>
           </div>
