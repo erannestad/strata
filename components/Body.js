@@ -3,7 +3,7 @@ import Canvas from '../components/Canvas'
 export default function Body() {
   return (
     <div className="content">
-       <section className='offset-header full-height background-color-black justify-bottom small-padding '>
+       <section className='offset-header full-height section-hero background-color-black justify-bottom small-padding '>
           <div id="events">
             {/* <h2>Program</h2> */}
             <div className="events-grid">
@@ -11,7 +11,7 @@ export default function Body() {
                 <div className="event-media">
                   <span className='event-label'>Screening</span>
                   <div className="event-img-wrap">
-                    <img src="/event-imgs/screening-we-still-live-here.png" alt="We Still Live Here" />
+                    <img src="/event-imgs/we-still-live-here.jpg" alt="We Still Live Here" />
                   </div>
                 </div>
                 <div className="event-body">
@@ -64,15 +64,14 @@ export default function Body() {
               </div>
             </div>
           </div>
-          {/* <div className='spacer_2-3'></div> */}
-            <p><b>STRATA</b> references the physical form of recent archeologic dig sites near the location of the 17th century Indian College. The installation takes a theoretical container of extracted earth and presents it above ground as an activation of public space and as a counterpoint to the mythologies of Harvard's origin. In the evening, this geotextile structure doubles as a screening space for various Indigenous-directed and featured films, co-curated with the Harvard University Native American Program.
-            </p>
+          <p>STRATA is on view  May 1-4, 2025 in the Old Harvard Yard. It is collaboration between students from the Harvard University Native American Program and the Harvard Graduate School of Design.</p>
 
         </section>
         <section id="site" className='full-height justify-bottom small-padding'></section>
         <section id="site" className=' small-padding background-color-black'>
           <div className='spacer'></div>
           <div>
+          <p><b>STRATA</b> references the physical form of recent archeologic dig sites near the location of the 17th century Indian College. The installation takes a theoretical container of extracted earth and presents it above ground as an activation of public space and as a counterpoint to the mythologies of Harvard's origin. In the evening, this geotextile structure doubles as a screening space for various Indigenous-directed and featured films, co-curated with the Harvard University Native American Program.</p>
           <p>The construction of the Indian College was shaped by Harvard’s early financial hardship and by the Charter of 1650, which committed to "the education of English and Indian youth.” Recent archaeological digs uncovered brick from the structure; ceramics, pipes, and other items offered insights into the lives of the resident English and Native American students; as well as lead movable type from the production of the first Bible translated into an Indigenous North American language. These artifacts were found below more recent layers of soil marked by contemporary life: petrochemical deposits, modern currency, and other traces of the Anthropocene. </p>
 
           <p>These material layers evidence a continuum of interconnected processes that began as a settler-colonial project, and unfolded across time and space into our present moment—transformed, but embedded. This ephemeral architectural installation offers a visual realignment of the Old Yard toward Harvard’s complicated relationship with the Indigenous people of North America and founding institutional motivations. The project brings together students, faculty, artists, and the local community to engage with these temporalities, layers, and evolving stories.</p>
